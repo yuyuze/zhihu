@@ -19,5 +19,5 @@ function readdirSync(dir, isRoot) {
 }
 
 readdirSync(mockDir, true);
-
+console.log(mock)
 module.exports = mock;

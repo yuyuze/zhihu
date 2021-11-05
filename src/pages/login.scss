@@ -1,0 +1,140 @@
+@import "../css/theme";
+.login_page {
+  background-image: url("https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png");
+  background-repeat: no-repeat;
+  background-color: #b8e5f8;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .SignFlowHomepage-logo {
+    width: 128px;
+    height: 81px;
+    margin-bottom: 24px;
+    margin-top: 30px;
+  }
+  .login_container_box{
+    margin-bottom: 100px;
+    width: 400px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    position: relative;
+    left: 0;
+    top: 0;
+    .login_container_inner{
+      width: 90%;
+      margin: 0 auto;
+      .login_header{
+        .nav{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          .nav_item{
+            position: relative;
+            left: 0;
+            top: 0;
+
+            &:nth-of-type(1){
+              margin-left: 0;
+            }
+            margin-left: 10px;
+            a{
+              display: inline-block;
+              line-height: 60px;
+              height: 60px;
+              text-decoration: none;
+              font-size: 16px;
+              color: #444;
+            }
+          }
+          .active{
+            &:after{
+              position: absolute;
+              top: 85%;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              content:'';
+              background: $main-color;
+            }
+            a{
+              color: #444;
+              font-weight: bold;
+              font-size: 17px;
+            }
+          }
+
+        }
+      }
+      .login_footer{
+        font-size: 13px;
+        .SignContainer-tip{
+          display: inline-block;
+          margin: 12px 0px;
+          color: gray;
+          a{
+            color: inherit;
+            text-decoration: none;
+          }
+        }
+        .login_method_area{
+          line-height: 60px;
+          height: 60px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          color:$c_color;
+          .comunity_login{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            li{
+              display: flex;
+              align-items: center;
+              margin: 5px;
+              svg{
+                display: inline-block;
+                vertical-align: middle;
+              }
+              span{
+                line-height: inherit;
+                margin: 5px;
+              }
+              list-style: none;
+              line-height: inherit;
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      background-color: #F6F6F6;
+      display: flex;
+      height: 60px;
+      flex-direction: row;
+      align-items: center;
+      div:not(.line_col){
+        flex: 1;
+        text-align: center;
+        a{
+          color: $main-color;
+          text-decoration: none;
+        }
+      }
+      .line_col{
+        height: 30px;
+        margin-top: 10px;
+        width: 1px;
+        background: #eee;
+      }
+    }
+  }
+
+}

@@ -3,12 +3,10 @@ const Mock = require('mockjs');
 const login = 'POST /api/login';
 
 const loginDB = Mock.mock({
-    success: '@boolean(1, 9, false)',
-    errorCode: '@integer(0, 10)',
-    message: '@cword(2,10)',
+    success: true,
+    message: '登陆成功',
     data: {
-        userName: '@cword(2,4)',
-        userId: '@integer(1000, 9999)',
+        token:123
     }
 });
 
